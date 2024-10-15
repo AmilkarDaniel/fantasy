@@ -1,4 +1,4 @@
-﻿<h3>GenericList</h3>
+﻿    <h3>GenericList</h3>
 
 
 @typeparam Titem
@@ -7,9 +7,7 @@
 {
     @if (Loading is null)
     {
-        <div class="d-flex justify-content-center align-items-center">
-            <img src="https://www.wpfaster.org/wp-content/uploads/2013/06/loading-gif.gif" width="200" height="200" />
-        </div>
+        <Loading/>
     }
     else
     {
@@ -20,7 +18,7 @@ else if (MyList.Count == 0)
 {
     @if (NoRecords is null)
     {
-        <p>No hay registros para mostrar...</p>
+        <p>@Localizer["NoRecords"]</p>
     }
     else
     {
